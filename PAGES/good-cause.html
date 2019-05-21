@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="good-cause.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;
+            background-position: top;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="promotion-tab">
+        <div class="promo-text">Buy soap, shampoo and other products and 10% of the price goes to charity</div>
+        <div class="promo-info"><a href="#" class="promo-link">Click here</a> to read more</div>
+    </div>
+    <div class="menu">
+        <div class="burger-box">
+            <div id="burger" class="container" onClick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbox">
+                <div class="logo-2">
+                    <a href="#"><img src="../images/logo-2.jpg" alt="Home Page" width="200"></a>
+                </div>
+                <div>
+                    <ul class="list">
+                        <a href="products.html">
+                            <li>PRODUCTS</li>
+                        </a>
+                        <a href="good-cause.html">
+                            <li>GOOD CAUSE</li>
+                        </a>
+                        <a href="sales.html">
+                            <li>SALES</li>
+                        </a>
+                        <a href="about-us.html">
+                            <li>ABOUT US</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head-buttons">
+        <div class="head-button"><a href="#"><img src="../images/search.png" alt="search" width="35em"></a></div>
+        <div class="head-button"><a href="#"><img src="../images/basket.png" alt="basket" width="35em"></a></div>
+        <div class="head-button"><a href="#"><img src="../images/user.png" alt="user-profile" width="35em"></a></div>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <div class="home-page"><a href="#"><img src="../images/logo.jpg" alt="TINC logo" width="250"></a></div>
+        </div>
+        <div class="nav">
+            <div class="nav-button"><a href="products.html">PRODUCTS</a></div>
+            <div id="main-cat" class="nav-button"><a href="good-cause.html">GOOD CAUSE</a></div>
+            <div class="nav-button"><a href="sales.html">SALES</a></div>
+            <div class="nav-button"><a href="about-us.html">ABOUT US</a></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+
+        </div>
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="../java/MyJS.js"></script>
+</body>
+
+</html>
