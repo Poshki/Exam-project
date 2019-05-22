@@ -1,42 +1,36 @@
 .dropdown {
+    position: absolute;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
-	height: 100%;
-    display: none;
-	overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #1e2226;
+    right: -100%;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .dropdown.clicked {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    right: 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     z-index: 1;
     position: absolute;
     width: 100%;
-	height: 100%;
+    height: 100%;
     display: block;
     background-color: #1e2226;
-	overflow-y: hidden;
+    overflow-y: hidden;
+    z-index: 10;
 }
 
-.body.clicked {
-	overflow-y: hidden;
-	display: none;
-}
-
-html.clicked {
-	overflow-y: hidden;
-	height:100%;
-}
-
-body.clicked {
-	position: relative;
-	overflow-y: hidden;
-	height:100%;
-}
 
 .dropbox {
     margin: 0 auto;
@@ -44,7 +38,8 @@ body.clicked {
     flex-direction: column;
     align-items: center;
     width: 90%;
-	overflow-y: hidden;
+    overflow-y: hidden;
+    z-index: 10;
 }
 
 .container {
@@ -52,7 +47,7 @@ body.clicked {
     cursor: pointer;
     display: none;
     margin: 10vw 50px 0 85%;
-    z-index: 2;
+    z-index: 15;
     position: absolute;
 }
 
@@ -90,29 +85,35 @@ body.clicked {
     position: relative;
     margin: 10vw auto 0 auto;
     width: 55%;
+    z-index: 5000;
+}
+
+.lgo-2 a {
+    z-index: 5000;
 }
 
 
 .logo-2 img {
     width: 100%;
+    z-index: 5000;
 }
 
 .list {
     list-style: none;
-	margin-top:15%;
+    margin-top: 15%;
     padding: 0;
     color: white;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 9vw;
-	max-height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 9vw;
+    max-height: 100%;
 }
 
 .list li {
-	margin-bottom:20%;
+    margin-bottom: 20%;
 }
 
 .list li:hover {
-	color: #91a580;
+    color: #91a580;
 }
 
 .promotion-tab {
@@ -121,7 +122,7 @@ body.clicked {
     justify-content: space-between;
     color: white;
     padding: 0.5em 5% 0.5em 5%;
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .promo-text {
@@ -155,7 +156,6 @@ body.clicked {
 .body {
     width: 90%;
     margin: 0 auto;
-    overflow-y: visible;
     margin-bottom: 50px;
 }
 
@@ -169,8 +169,8 @@ body.clicked {
 
 .nav {
     margin-left: 30px;
-	margin-bottom:5px;
-	padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: black;
     display: flex;
     justify-content: space-around;
@@ -178,7 +178,7 @@ body.clicked {
     border-bottom: solid #91a580 3px;
     font-size: 23px;
     width: 100%;
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav-button {
@@ -191,7 +191,7 @@ body.clicked {
 }
 
 #main-cat {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .content {
@@ -200,9 +200,9 @@ body.clicked {
 }
 
 @media only screen and (min-width: 1200px) {
-	.nav {
-		font-size: 30px;
-	}
+    .nav {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -214,11 +214,15 @@ body.clicked {
     .nav {
         margin-left: 0;
         margin-top: 30px;
-		font-size: 20px;
+        font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 600px) {
+    .dropdown {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -247,4 +251,7 @@ body.clicked {
         margin: 0 auto;
     }
 
+    .wrapper {
+        overflow-x: hidden !important;
+    }
 }

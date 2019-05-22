@@ -1,42 +1,37 @@
 .dropdown {
+    position: absolute;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
-	height: 100%;
-    display: none;
-	overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #1e2226;
+    right: -100%;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .dropdown.clicked {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    right: 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     z-index: 1;
     position: absolute;
     width: 100%;
-	height: 100%;
+    height: 100%;
     display: block;
     background-color: #1e2226;
-	overflow-y: hidden;
+    overflow-y: hidden;
+    z-index: 10;
 }
 
-.body.clicked {
-	overflow-y: hidden;
-	display: none;
-}
 
-html.clicked {
-	overflow-y: hidden;
-	height:100%;
-}
-
-body.clicked {
-	position: relative;
-	overflow-y: hidden;
-	height:100%;
-}
 
 .dropbox {
     margin: 0 auto;
@@ -44,7 +39,8 @@ body.clicked {
     flex-direction: column;
     align-items: center;
     width: 90%;
-	overflow-y: hidden;
+    overflow-y: hidden;
+    z-index: 10;
 }
 
 .container {
@@ -52,7 +48,7 @@ body.clicked {
     cursor: pointer;
     display: none;
     margin: 10vw 50px 0 85%;
-    z-index: 2;
+    z-index: 15;
     position: absolute;
 }
 
@@ -90,29 +86,35 @@ body.clicked {
     position: relative;
     margin: 10vw auto 0 auto;
     width: 55%;
+    z-index: 5000;
+}
+
+.lgo-2 a {
+    z-index: 5000;
 }
 
 
 .logo-2 img {
     width: 100%;
+    z-index: 5000;
 }
 
 .list {
     list-style: none;
-	margin-top:15%;
+    margin-top: 15%;
     padding: 0;
     color: white;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 9vw;
-	max-height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 9vw;
+    max-height: 100%;
 }
 
 .list li {
-	margin-bottom:20%;
+    margin-bottom: 20%;
 }
 
 .list li:hover {
-	color: #91a580;
+    color: #91a580;
 }
 
 .promotion-tab {
@@ -121,7 +123,7 @@ body.clicked {
     justify-content: space-between;
     color: white;
     padding: 0.5em 5% 0.5em 5%;
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .promo-text {
@@ -155,7 +157,6 @@ body.clicked {
 .body {
     width: 90%;
     margin: 0 auto;
-    overflow-y: visible;
     margin-bottom: 50px;
 }
 
@@ -169,16 +170,16 @@ body.clicked {
 
 .nav {
     margin-left: 30px;
-	margin-bottom:5px;
-	padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: black;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     border-bottom: solid #91a580 3px;
     width: 100%;
-	font-family: 'Raleway', sans-serif;
-	font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
 }
 
 .nav-button {
@@ -218,11 +219,11 @@ body.clicked {
     width: 100%;
     display: none;
     margin-bottom: 10px;
-	transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .cat-block-phone:hover {
-	transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .cat-phone {
@@ -230,52 +231,47 @@ body.clicked {
 }
 
 .categories {
-	display: flex;
-	justify-content: space-between;
-	margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .cat-box {
-	width:23%;
-	display: flex;justify-content: space-between;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cat-block-pc {
     width: 100%;
     margin-bottom: 10px;
-	transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .cat-block-pc:hover {
-	transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .cat-pc {
-	width:100%;
+    width: 100%;
 }
 
 .carousel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:0 auto;
-	flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
 }
 
-.carousel-pics img {
-	width:200px;
-	margin:10px;
+.carousel img {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.carousel-pics {
-	display: flex;
-	
-}
 
 @media only screen and (min-width: 1200px) {
-	.nav {
-		font-size: 30px;
-	}
+    .nav {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -287,31 +283,35 @@ body.clicked {
     .nav {
         margin-left: 0;
         margin-top: 30px;
-		font-size: 20px;
+        font-size: 20px;
     }
-	
-	.cat-box {
-		width: 48%;
-		margin-bottom: 10px;
-	}
+
+    .cat-box {
+        width: 48%;
+        margin-bottom: 10px;
+    }
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 600px) {
+    .dropdown {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
     .poster-pic-1,
     .head-buttons,
     .nav,
-	.categories,
+    .categories,
     .promotion-tab {
         display: none;
     }
-	
-	.posters {
-		margin-top:10%;
-	}
-	
+
+    .posters {
+        margin-top: 10%;
+    }
+
     .logo {
         margin: 10vw auto 0 auto;
         width: 55%;
@@ -336,4 +336,7 @@ body.clicked {
         display: block;
     }
 
+    .wrapper {
+        overflow-x: hidden !important;
+    }
 }
