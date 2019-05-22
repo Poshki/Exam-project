@@ -105,22 +105,52 @@
             </div>
         </div>
         <div class="body">
-            <div class="content">
-                <div class="content-box">
-                    <div class="video">
-                        <video type="video/mp4" src="../video/interview.mp4" poster="../images/video-poster.png" width="560" height="315" controls></video>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="description">
-                        <h1>MEET THE OWNERS</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
+			<h1>MEET THE OWNERS</h1>
+            <div class="description">
+                <p>Hello and welcome to the website about TINC!
+                    <br><br>
+                    TINC is a company that is new to the market. At our shop you can find products that are sustainable, environmentally friendly, natural, vegan and organic.
+                    <br><br>
+                    The shop has been open for almost a year. We have only one shop in the second largest city of Denmark – Aarhus, but sometimes you can find us in your city’s local festivals.
+                    <br><br>
+                    We do not compromise on quality of products, but at the same time we would like to give our customers a reasonable and affordable price. All of the products in our shop are from European countries.
+                    <br><br>
+                    We care about our planet earth, because we believe, that there is no plan B, so actions should be taken now. From some of the products you buy, we give a certain percentage of money as donations to foundations. If you want to read more about it, check out our “Good cause” page.
+                    <br><br>
+                    It means a lot to support a good purpose in one way or another, so it is very important to us that our products would fit into all the requirements. We must protect the environment, our surroundings and future generations, so why not to start today? Why not to start with TINC?
+                    <br><br>
+                    We hope our customers will have a pleasant experience shopping online, but also in the store. If you want to know more about our products or get help once you are in a doubt, come down to the heart of Aarhus and visit us in our lovely shop.
+                </p>
             </div>
-            <div class="map-box">
-                <div id="map"></div>
-            </div>
+			<div class="content">
+				<div class="video">
+					<video type="video/mp4" src="../video/interview.mp4" poster="../images/video-poster.png" width="560" height="315" controls></video>
+				</div>
+				<div class="map-box">
+					<div id="map"></div>
+				</div>
+				<div class="contacts">
+					<div class="text-1">
+						Feel free to invite us to your local event! We will gladly bring the bright mood, positive energy and sustainable goods!
+						<br><br><br>
+						If you want to reach out to us, the easiest way is to find us in the shop or contact us through the email: aarhus@tinc.shop
+					</div>
+					<div class="text-2">
+						<strong>Our address:</strong><br>Frederiksgade 22,<br>8000 Aarhus
+						<br><br><br>
+						<strong>We are open:</strong>
+						<br>
+						Monday to<br>Thursday: 09 – 18
+						<br>
+						Friday: 09 – 19
+						<br>
+						Saturday: 10 – 17
+						<br>
+						Sunday: 11 - 16
+						<br>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
     <script>
@@ -134,17 +164,16 @@
         var geojson = {
             type: 'FeatureCollection',
             features: [{
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
-                        coordinates: [10.205892, 56.155718]
-                    },
-                    properties: {
-                        title: 'Mapbox',
-                        description: 'TINC shop'
-                    }
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [10.205892, 56.155718]
+                },
+                properties: {
+                    title: 'Mapbox',
+                    description: 'TINC shop'
                 }
-            ]
+            }]
         };
 
         geojson.features.forEach(function(marker) {

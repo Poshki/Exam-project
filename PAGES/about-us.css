@@ -32,7 +32,6 @@ p {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    z-index: 1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -166,18 +165,12 @@ p {
     transform: scale(1.1);
 }
 
-.body {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 
 .header {
     display: flex;
     align-items: flex-end;
     width: 90%;
     margin: 0 auto;
-
 }
 
 .nav {
@@ -207,15 +200,28 @@ p {
     font-weight: 700;
 }
 
-.content {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 50px;
+
+
+.body {
+    width: 90%;
+    margin: 50px auto 3% auto;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	overflow: hidden;
 }
 
-.content-box {
-    width: 50%;
+.body h1 {
+	position: absolute;
+	left:50.8%
+}
+
+.content {
+	width:47%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2vw;
+	border-right: solid 4px #91a580;
+	padding-right:2vw;
 }
 
 .video video {
@@ -223,18 +229,35 @@ p {
     height: 100%;
 }
 
-.video {
 
-    margin-right: 5%;
+.description{
+	width:49%;
+	overflow-y: scroll;
+	height:65vw;
+	margin-top:4vw;
 }
 
-.description {
-    margin-left: 5%;
+.contacts {
+	margin-top:20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.text-1{
+	width:50%;
+}
+
+.text-2 {
+	width:auto;
+}
+
+.map-box {
+	margin-top:20px;
 }
 
 #map {
     width: 100%;
-    height: 40vw;
+    height: 25vw;
 }
 
 .marker {
@@ -246,13 +269,22 @@ p {
     height: 90px;
  }
 
-.mapboxgl-marker, .mapboxgl-marker-anchor-center {
-}
-
 @media only screen and (min-width: 1200px) {
     .nav {
         font-size: 30px;
     }
+	
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	.description {
+		height:70vw;
+	}
+	
+	.content {
+		font-size: 1.5vw;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -267,23 +299,6 @@ p {
         font-size: 20px;
     }
 
-    .content {
-        flex-direction: column-reverse;
-    }
-
-    .content-box {
-        width: 100%;
-        margin-bottom: 5vw;
-    }
-
-    .video {
-        margin: 0
-    }
-
-    .description {
-        margin: 0;
-    }
-
     h1 {
         font-size: 4vw;
     }
@@ -294,9 +309,39 @@ p {
 
     #map {
         width: 100%;
-        height: 60vw;
+        height: 40vw;
     }
 
+	.body {
+		flex-direction: column;
+		overflow: visible;
+		margin-bottom:50px;
+	}
+	
+	.content {
+		width:100%;
+		height:100%;
+		margin-top:50px;
+		font-size: 2.2vw;
+		border:none;
+		padding:0;
+	}
+
+
+	.description{
+		width:100%;
+		height:50vw;
+	}
+
+
+	.map-box {
+		margin-top:40px;
+	}
+	
+	.body h1 {
+		position: relative;
+		left:0;
+	}
 
 }
 
@@ -317,12 +362,12 @@ p {
 
     p {
         font-size: 4.8vw;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .video {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -349,9 +394,15 @@ p {
     .content {
         width: 100%;
         margin: 50px auto 0 auto;
+		font-size: 3.3vw;
     }
 
     .wrapper {
-        overflow-x: hidden !important;
+        overflow-x:auto;
     }
+	
+	.description {
+		height:80vw;
+	}
+
 }
