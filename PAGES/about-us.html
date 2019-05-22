@@ -3,10 +3,12 @@
 
 <head>
     <title></title>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="about-us.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
     <style>
         html,
         body {
@@ -42,6 +44,9 @@
             color: inherit;
         }
 
+		#map { 
+			position:relative; 
+		}
     </style>
 </head>
 
@@ -113,12 +118,52 @@
                     </div>
                 </div>
             </div>
+            <div class="map-box">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
     <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicG9zaGtpaSIsImEiOiJjanR6aWRyN3IxajBzNDRwbHdidGVmbW4wIn0.DECcbIftwEul4yvcqVBFlA';
+        const map = new mapboxgl.Map({
+            container: "map",
+            style: 'mapbox://styles/poshkii/cjvz3vynn05ya1cpokv8j7q9j',
+            center: [10.205892, 56.155718],
+            zoom: 13.0,
+        });
+        var geojson = {
+            type: 'FeatureCollection',
+            features: [{
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [10.205892, 56.155718]
+                    },
+                    properties: {
+                        title: 'Mapbox',
+                        description: 'TINC shop'
+                    }
+                }
+            ]
+        };
+
+        geojson.features.forEach(function(marker) {
+
+
+            var el = document.createElement('div');
+            el.className = 'marker';
+
+
+            new mapboxgl.Marker(el)
+                .setLngLat([10.205892, 56.155718])
+                .addTo(map);
+        });
+
+    </script>
+    <script>
         function myFunction(x) {
             x.classList.toggle("change");
-        }
+        };
 
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
