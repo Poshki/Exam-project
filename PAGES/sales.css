@@ -224,6 +224,7 @@
 	font-family: 'Raleway', sans-serif;
 	font-size: 2vw;
 	padding:5px;
+	cursor:pointer;
 }
 
 .sale-1 button, .sale-4 button {
