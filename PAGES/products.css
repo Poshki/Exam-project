@@ -212,11 +212,15 @@
     padding: 1vw 0;
     text-align: center;
     color: white;
-    font-size: 30px;
 }
 
 .cat-head-phone {
     display: none;
+	font-size: 6vw;
+}
+
+.cat-head-pc {
+    font-size: 30px;
 }
 
 .flip-head {
@@ -428,6 +432,7 @@
     width: 100%;
 }
 
+
 .sorting {
     display: flex;
     justify-content: flex-end;
@@ -609,6 +614,8 @@
     .main-flip {
         display: flex;
         justify-content: space-between;
+		align-items: center;
+		text-align: center;
     }
 
     .filter-toggle {
@@ -622,10 +629,8 @@
 
     .cat-head-phone {
         padding: 3vw 0;
-    }
-
-    .cat-head-phone {
         display: block;
+		text-align: center;
     }
 
     .flip {

@@ -239,7 +239,7 @@ p {
 
 .contacts-box h1{
 	border-bottom:solid 2px #91a580;
-	
+	font-size: 2.5vw;
 }
 
 .contacts-box {
@@ -250,6 +250,10 @@ p {
 	display: flex;
 	justify-content: space-between;
 	margin-top:10px;
+}
+
+.contacts p {
+	font-size:1.5vw;
 }
 
 .text-1{
@@ -351,6 +355,14 @@ p {
 		position: relative;
 		left:0;
 	}
+	
+	.contacts p {
+		font-size:2.5vw;
+	}
+	
+	.contacts-box h1{
+		font-size: 3.5vw;
+	}
 
 }
 
@@ -412,6 +424,14 @@ p {
 	
 	.description {
 		height:80vw;
+	}
+	
+	.contacts p {
+		font-size:3.5vw;
+	}
+	
+	.contacts-box h1{
+		font-size: 4vw;
 	}
 
 }
