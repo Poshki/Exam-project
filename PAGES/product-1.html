@@ -4,7 +4,7 @@
 <head>
     <title></title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="good-cause.css">
+    <link rel="stylesheet" type="text/css" href="product-1.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <style>
@@ -57,20 +57,20 @@
         <div class="dropdown">
             <div class="dropbox">
                 <div class="logo-2">
-                    <a href="#"><img src="../images/logo-2.jpg" alt="Home Page" width="200"></a>
+                    <a href="#"><img src="../../Exam-project/images/logo-2.jpg" alt="Home Page" width="200"></a>
                 </div>
                 <div>
                     <ul class="list">
-                        <a href="products.html">
+                        <a href="../../Exam-project/PAGES/products.html">
                             <li>PRODUCTS</li>
                         </a>
-                        <a href="good-cause.html">
+                        <a href="../../Exam-project/PAGES/good-cause.html">
                             <li>GOOD CAUSE</li>
                         </a>
-                        <a href="sales.html">
+                        <a href="../../Exam-project/PAGES/sales.html">
                             <li>SALES</li>
                         </a>
-                        <a href="about-us.html">
+                        <a href="../../Exam-project/PAGES/about-us.html">
                             <li>ABOUT US</li>
                         </a>
 						<a href="../../Exam-project/PAGES/about-us.html">
@@ -88,25 +88,57 @@
 				<div class="promo-info"><a href="#" class="promo-link">Click here</a> to read more</div>
 			</div>
 			<div class="head-buttons">
-				<div class="head-button"><a href="#"><img src="../images/search.png" alt="search" width="35em"></a></div>
-				<div class="head-button"><a href="#"><img src="../images/basket.png" alt="basket" width="35em"></a></div>
-				<div class="head-button"><a href="#"><img src="../images/user.png" alt="user-profile" width="35em"></a></div>
+				<div class="head-button"><a href="#"><img src="../../Exam-project/images/search.png" alt="search" width="35em"></a></div>
+				<div class="head-button"><a href="#"><img src="../../Exam-project/images/basket.png" alt="basket" width="35em"></a></div>
+				<div class="head-button"><a href="#"><img src="../../Exam-project/images/user.png" alt="user-profile" width="35em"></a></div>
 			</div>
 			<nav class="header">
 				<div class="logo">
-					<div class="home-page"><a href="#"><img src="../images/logo.jpg" alt="TINC logo" width="250"></a></div>
+					<div class="home-page"><a href="#"><img src="../../Exam-project/images/logo.jpg" alt="TINC logo" width="250"></a></div>
 				</div>
 				<div class="nav">
-					<div class="nav-button"><a href="products.html">PRODUCTS</a></div>
-					<div id="main-cat" class="nav-button"><a href="good-cause.html">GOOD CAUSE</a></div>
-					<div class="nav-button"><a href="sales.html">SALES</a></div>
-					<div class="nav-button"><a href="about-us.html">ABOUT US</a></div>
+					<div class="nav-button"><a href="../../Exam-project/PAGES/products.html">PRODUCTS</a></div>
+					<div id="main-cat" class="nav-button"><a href="../../Exam-project/PAGES/good-cause.html">GOOD CAUSE</a></div>
+					<div class="nav-button"><a href="../../Exam-project/PAGES/sales.html">SALES</a></div>
+					<div class="nav-button"><a href="../../Exam-project/PAGES/about-us.html">ABOUT US</a></div>
 				</div>
 			</nav>
 		</header>
         <main class="body">
             <div class="content">
-
+				<section class="product">
+					<div class="photo">
+						<img src="../images/Products pics/DSC02808.jpg">
+					</div>
+					<div class="description">
+						<h1>SOAP LAVANDER PLUS</h1>
+						<img src="../images/stars.png">
+						<p>This soap bar is environmentally friendly choice, as you not only don't use plastic packaging for the product, but also you don't have to</p>
+						<div class="order">
+							<div class="counter">
+								<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><strong>-</strong></div>
+								<input type="number" id="number" value="1" />
+								<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><strong>+</strong></div>
+							</div>
+							<div class="add-to-cart">
+								<div>ADD TO CART</div>
+							</div>
+						</div>
+						<div id="popper" class="pop-up">&nbsp;</div>
+						<div id="pop-up" class="pop-up-text">
+							<div class="pop-text">
+								Added To Basket
+							</div>
+							<div class="close">&#10006;</div>
+						</div>
+					</div>
+				</section>
+				<section class="similar">
+					
+				</section>
+				<section class="reviews">
+					
+				</section>
             </div>
         </main>
     </div>
@@ -118,7 +150,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
     </script>
-    <script src="../java/MyJS.js"></script>
+    <script src="../java/MyJS-product.js"></script>
 </body>
 
 </html>
