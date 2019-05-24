@@ -193,7 +193,7 @@
 
 .posters {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .poster {
@@ -260,11 +260,24 @@
     margin: 0 auto;
     width: 90%;
     text-align: center;
+	font-family: 'Raleway', sans-serif;
 }
 
 .carousel img {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.img-text {
+	margin:10px 0;
+	font-size: 27px;
+}
+
+.product-wrap {
+	background-color: #ececec;
+	border-radius: 10px;
 }
 
 
@@ -290,6 +303,10 @@
         width: 48%;
         margin-bottom: 10px;
     }
+	
+	.img-text {
+		font-size: 25px;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -339,4 +356,8 @@
     .wrapper {
         overflow-x: hidden !important;
     }
+	
+	.img-text {
+		font-size: 20px;
+	}
 }

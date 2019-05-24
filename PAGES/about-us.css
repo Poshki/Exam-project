@@ -211,7 +211,7 @@ p {
 	overflow: hidden;
 }
 
-.body h1 {
+.intro {
 	position: absolute;
 	left:50.8%
 }
@@ -237,10 +237,19 @@ p {
 	margin-top:4vw;
 }
 
-.contacts {
+.contacts-box h1{
+	border-bottom:solid 2px #91a580;
+	
+}
+
+.contacts-box {
 	margin-top:20px;
+}
+
+.contacts {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-top:10px;
 }
 
 .text-1{
@@ -299,7 +308,7 @@ p {
         font-size: 20px;
     }
 
-    h1 {
+    .intro {
         font-size: 4vw;
     }
 
@@ -338,7 +347,7 @@ p {
 		margin-top:40px;
 	}
 	
-	.body h1 {
+	.intro {
 		position: relative;
 		left:0;
 	}
@@ -353,7 +362,7 @@ p {
 
 @media only screen and (max-width: 600px) {
 
-    h1 {
+    .intro {
         font-size: 6vw;
         text-align: center;
         border-bottom: solid #91a580 3px;
