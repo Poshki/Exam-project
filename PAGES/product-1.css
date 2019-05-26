@@ -222,11 +222,19 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-.description h1 {
+.name  {
 	font-family: 'Quicksand', sans-serif;
 	margin:0;
 	font-size: 3vw;
-	margin-bottom:5px;
+}
+
+.description h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5vw; 
+	font-weight: 400;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 .description p {
@@ -399,10 +407,102 @@ input[type=number] {
   	cursor: pointer;
 	}
 
+.carousel {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.carousel img {
+    width: 100%;
+    margin: 0 auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.img-text {
+	margin:10px 0;
+	font-size: 27px;
+}
+
+.product-wrap {
+	background-color: #ececec;
+	border-radius: 10px;
+}
+
+.product-wrap:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.similar {
+	margin-top:50px;
+}
+
+.similar h1, .reviews h1 {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: rgb(145, 165, 128);
+	text-decoration-style: solid;
+	font-size: 2vw;
+}
+
+.review-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.review-1, .review-2 {
+	width: 47%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.review-head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom:25px;
+}
+
+.rating {
+	width:12vw;
+	min-width:80px;
+}
+
+.reviews h3 {
+	width: auto;
+	margin:0;
+	margin-left:5%;
+	font-size:2vw;
+}
+
+.reviews p {
+	margin: 0;
+}
+
+.review-name {
+	font-size: 1.3vw;
+}
+
+.review-text {
+	font-size: 1.5vw;
+}
+
 @media only screen and (min-width: 1200px) {
     .nav {
         font-size: 30px;
     }
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	.review-name {
+		font-size: 1.7vw;
+	}
+
+	.review-text {
+		font-size: 1.9vw;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -429,8 +529,12 @@ input[type=number] {
 		margin-top:3%;
 	}
 	
-	.description h1 {
+	.name {
 		font-size: 3.5vw;
+	}
+	
+	.description h2 {
+		font-size: 3vw;
 	}
 
 	.description p {
@@ -458,6 +562,22 @@ input[type=number] {
 		min-height: 100px;
 		height:12vw;
 		width:45%;
+	}
+	
+	.similar h1, .reviews h1 {
+		font-size: 3vw;
+	}
+	
+	.reviews h3 {
+		font-size:2.5vw;
+	}
+	
+	.review-name {
+		font-size: 15px;
+	}
+
+	.review-text {
+		font-size: 20px;
 	}
 }
 
@@ -498,12 +618,16 @@ input[type=number] {
         overflow-x: hidden !important;
     }
 	
-	.description h1 {
-		font-size: 5vw;
+	.name {
+		font-size: 25px;
+	}
+	
+	.description h2 {
+		font-size: 20px;
 	}
 
 	.description p {
-		font-size: 4vw;
+		font-size: 15px;
 	}
 	
 	.order {
@@ -544,5 +668,35 @@ input[type=number] {
 	
 	.value-button {
 		padding-bottom:15%;
+	}
+	
+	.similar h1, .reviews h1 {
+		font-size: 20px;
+	}
+	
+	.reviews h3 {
+		font-size:18px;
+	}
+	
+	.review-box {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.review-1, .review-2 {
+		width:100%;
+	}
+	
+	.review-1 {
+		margin-bottom:50px;
+	}
+	
+	.review-head {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	
+	.reviews h3 {
+		margin:0;
 	}
 }
