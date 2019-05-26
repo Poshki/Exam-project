@@ -161,6 +161,10 @@ p {
     transition: all .2s ease-in-out;
 }
 
+.head-button img {
+	width:40px;
+}
+
 .head-button:hover {
     transform: scale(1.1);
 }

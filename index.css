@@ -150,6 +150,10 @@
     transition: all .2s ease-in-out;
 }
 
+.head-button img {
+	width:40px;
+}
+
 .head-button:hover {
     transform: scale(1.1);
 }
@@ -256,6 +260,16 @@
     width: 100%;
 }
 
+.recommended {
+	font-size: 35px;
+	font-weight: 400;
+	margin:0 auto;
+	width:auto;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	border-bottom:solid 2px rgb(145, 165, 128);
+}
+
 .carousel {
     margin: 0 auto;
     width: 90%;
@@ -311,6 +325,10 @@
 	.img-text {
 		font-size: 25px;
 	}
+	
+	.recommended {
+		font-size: 30px;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -363,5 +381,10 @@
 	
 	.img-text {
 		font-size: 20px;
+	}
+	
+	.recommended {
+		font-size: 25px;
+		margin-top:20px;
 	}
 }
