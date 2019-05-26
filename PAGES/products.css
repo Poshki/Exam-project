@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    z-index: 10;b
+    z-index: 10;
     width: 100%;
     height: 100%;
     overflow-y: hidden;
@@ -150,7 +150,7 @@
 }
 
 .head-button img {
-	width:40px;
+    width: 40px;
 }
 
 .head-button:hover {
@@ -220,7 +220,7 @@
 
 .cat-head-phone {
     display: none;
-	font-size: 6vw;
+    font-size: 6vw;
 }
 
 .cat-head-pc {
@@ -424,7 +424,7 @@
 }
 
 .product-block-pc {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     transition: all .2s ease-in-out;
 }
@@ -619,8 +619,8 @@
     .main-flip {
         display: flex;
         justify-content: space-between;
-		align-items: center;
-		text-align: center;
+        align-items: center;
+        text-align: center;
     }
 
     .filter-toggle {
@@ -635,7 +635,7 @@
     .cat-head-phone {
         padding: 3vw 0;
         display: block;
-		text-align: center;
+        text-align: center;
     }
 
     .flip {

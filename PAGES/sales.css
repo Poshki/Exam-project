@@ -150,7 +150,7 @@
 }
 
 .head-button img {
-	width:40px;
+    width: 40px;
 }
 
 .head-button:hover {
@@ -203,98 +203,118 @@
     margin: 50px auto;
 }
 
-.row-1, .row-2 {
-	display: flex;
-	justify-content: space-between;
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .row-2 {
-	margin-top:20px;
+    margin-top: 20px;
 }
 
-.sale-1, .sale-2, .sale-3, .sale-4 {
-	height: 20vw;
-	cursor: pointer;
-	transition: all .2s ease-in-out;
+.sale-1,
+.sale-2,
+.sale-3,
+.sale-4 {
+    height: 20vw;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
-.sale-1:hover, .sale-2:hover, .sale-3:hover, .sale-4:hover {
-	transform:scale(1.01);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+.sale-1:hover,
+.sale-2:hover,
+.sale-3:hover,
+.sale-4:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button-1, .button-2, .button-3, .button-4 {
-	border:none;
-	font-family: 'Raleway', sans-serif;
-	font-size: 2vw;
-	padding:5px;
-	cursor:pointer;
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.button-1, .button-4 {
-	background-color: black;
-	color:white;
+.button-1,
+.button-4 {
+    background-color: black;
+    color: white;
 }
 
-.button-2, .button-3 {
-	background-color: white;
-	color:black;
+.button-2,
+.button-3 {
+    background-color: white;
+    color: black;
 }
 
-.button-1, .button-2, .button-3, .button-4 {
-	float: right;
-	margin: 5vw 2vw 0 0;
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+    float: right;
+    margin: 5vw 2vw 0 0;
 }
 
 
-.sale-1, .sale-3 {
-	margin-right:2%;
+.sale-1,
+.sale-3 {
+    margin-right: 2%;
 }
 
-.sale-2, .sale-4 {
-	margin-left:2%;
+.sale-2,
+.sale-4 {
+    margin-left: 2%;
 }
 
-.sale-2, .sale-3 {
-	width:60%;
+.sale-2,
+.sale-3 {
+    width: 60%;
 }
 
-.sale-1, .sale-4 {
-	background-color: #ececec;
-	width:auto;
+.sale-1,
+.sale-4 {
+    background-color: #ececec;
+    width: auto;
 }
 
-.sale-2{
-	background-color: #1e2226;
-	color:white
+.sale-2 {
+    background-color: #1e2226;
+    color: white
 }
 
 .sale-3 {
-	background-color: #91a580;
+    background-color: #91a580;
 }
 
-.row-1 h1, .row-2 h1 {
-	font-weight: 400;
-	font-family: 'Raleway', sans-serif;
-	font-size:2vw;
-	margin:0;
+.row-1 h1,
+.row-2 h1 {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    margin: 0;
 }
 
 
 .sale-1 h1 {
-	padding:3vw 30% 2vw 3vw;
+    padding: 3vw 30% 2vw 3vw;
 }
 
 .sale-2 h1 {
-	padding:3vw 30% 2vw 3vw;
+    padding: 3vw 30% 2vw 3vw;
 }
 
 .sale-3 h1 {
-	padding:3vw 40% 2vw 3vw;
+    padding: 3vw 40% 2vw 3vw;
 }
 
 .sale-4 h1 {
-	padding:3vw 40% 2vw 3vw;
+    padding: 3vw 40% 2vw 3vw;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -314,34 +334,43 @@
         margin-top: 30px;
         font-size: 20px;
     }
-	
-	.sale-1, .sale-2, .sale-3, .sale-4 {
-		height: 25vw;
-	}
-	
-	.button-1, .button-4 {
-		margin: 7vw 2.5vw 2vw 0;
-	}
-	
-	.button-2, .button-3 {
-		margin: 7vw 2.5vw 2vw 0;
-	}
-	
-	.row-1 h1, .row-2 h1 {
-		font-size:2.5vw;
-	}
-	
-	.sale-2 h1 {
-		padding:3vw 20% 2vw 3vw;
-	}
 
-	.sale-3 h1 {
-		padding:3vw 20% 2vw 3vw;
-	}
-	
-	.button-1, .button-2, .button-3, .button-4 {
-		font-size: 2.5vw;
-	}
+    .sale-1,
+    .sale-2,
+    .sale-3,
+    .sale-4 {
+        height: 25vw;
+    }
+
+    .button-1,
+    .button-4 {
+        margin: 7vw 2.5vw 2vw 0;
+    }
+
+    .button-2,
+    .button-3 {
+        margin: 7vw 2.5vw 2vw 0;
+    }
+
+    .row-1 h1,
+    .row-2 h1 {
+        font-size: 2.5vw;
+    }
+
+    .sale-2 h1 {
+        padding: 3vw 20% 2vw 3vw;
+    }
+
+    .sale-3 h1 {
+        padding: 3vw 20% 2vw 3vw;
+    }
+
+    .button-1,
+    .button-2,
+    .button-3,
+    .button-4 {
+        font-size: 2.5vw;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -380,34 +409,45 @@
     .wrapper {
         overflow-x: hidden !important;
     }
-	
-	.row-1, .row-2 {
-		justify-content: space-between;
-		flex-direction: column;
-		margin:0;
-	}
-	
-	.sale-1, .sale-2, .sale-3, .sale-4 {
-		width:100%;
-		margin:20px 0;
-	}
-	
-	.row-1 h1, .row-2 h1 {
-		font-size:4vw;
-	}
-	
-	
-	.button-2, .button-3 {
-		margin-top:1vw
-	}
-	
-	.button-1, .button-2, .button-3, .button-4 {
-		font-size: 3.5vw;
-	}
-	
-	.sale-1 h1, .sale-2 h1, .sale-3 h1, .sale-4 h1 {
-		padding:3vw 3vw 0 3vw;
-		font-size: 5vw;
-	}
-}
 
+    .row-1,
+    .row-2 {
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sale-1,
+    .sale-2,
+    .sale-3,
+    .sale-4 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .row-1 h1,
+    .row-2 h1 {
+        font-size: 4vw;
+    }
+
+
+    .button-2,
+    .button-3 {
+        margin-top: 1vw
+    }
+
+    .button-1,
+    .button-2,
+    .button-3,
+    .button-4 {
+        font-size: 3.5vw;
+    }
+
+    .sale-1 h1,
+    .sale-2 h1,
+    .sale-3 h1,
+    .sale-4 h1 {
+        padding: 3vw 3vw 0 3vw;
+        font-size: 5vw;
+    }
+}
