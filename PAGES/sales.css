@@ -213,6 +213,34 @@
     margin-top: 20px;
 }
 
+.sale-1 {
+	background-image: url("../images/Products-pics/DSC02808-hq-blur.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sale-2 {
+	background-image: url("../images/Products-pics/DSC02887-hq-blur.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sale-3 {
+	background-image: url("../images/Products-pics/DSC02882-hq-blur.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sale-4 {
+	background-image: url("../images/Products-pics/DSC02915-hq-blur.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .sale-1,
 .sale-2,
 .sale-3,
@@ -285,7 +313,6 @@
 
 .sale-2 {
     background-color: #1e2226;
-    color: white
 }
 
 .sale-3 {
