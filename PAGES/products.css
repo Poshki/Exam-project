@@ -123,6 +123,7 @@
     color: white;
     padding: 0.5em 5% 0.5em 5%;
     font-family: 'Raleway', sans-serif;
+	font-size: 15px;
 }
 
 .promo-text {
@@ -179,7 +180,7 @@
     justify-content: space-around;
     align-items: flex-end;
     border-bottom: solid #91a580 3px;
-    font-size: 23px;
+    font-size: 20px;
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
@@ -596,7 +597,7 @@
 
 @media only screen and (min-width: 1200px) {
     .nav {
-        font-size: 30px;
+        font-size: 25px;
     }
 
 }
@@ -610,7 +611,7 @@
     .nav {
         margin-left: 0;
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .product-box {

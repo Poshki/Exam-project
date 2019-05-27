@@ -135,6 +135,7 @@ p {
     color: white;
     padding: 0.5em 5% 0.5em 5%;
     font-family: 'Raleway', sans-serif;
+	font-size: 15px;
 }
 
 .promo-text {
@@ -186,7 +187,7 @@ p {
     justify-content: space-around;
     align-items: flex-end;
     border-bottom: solid #91a580 3px;
-    font-size: 23px;
+    font-size: 20px;
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
@@ -236,7 +237,6 @@ p {
 
 .description {
     width: 49%;
-    overflow-y: scroll;
     height: 75vw;
     margin-top: 4vw;
 }
@@ -252,12 +252,12 @@ p {
 
 .contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
 }
 
 .contacts p {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
 }
 
 .text-1 {
@@ -370,10 +370,16 @@ p {
 
 @media only screen and (min-width: 1200px) {
     .nav {
-        font-size: 30px;
+        font-size: 25px;
     }
 
-
+	p {
+		font-size: 1.3vw;
+	}
+	
+	.contacts p {
+		font-size: 1.3vw;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -382,6 +388,10 @@ p {
     .content {
         font-size: 1.5vw;
     }
+	
+	.description {
+		overflow-y: scroll;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -393,7 +403,7 @@ p {
     .nav {
         margin-left: 0;
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .intro {
@@ -401,7 +411,7 @@ p {
     }
 
     p {
-        font-size: 2.8vw;
+        font-size: 20px;
     }
 
     #map {
@@ -440,12 +450,16 @@ p {
     }
 
     .contacts p {
-        font-size: 2.5vw;
+        font-size: 20px;
     }
 
     .contacts-box h1 {
         font-size: 3.5vw;
     }
+	
+	.description {
+		overflow-y: scroll;
+	}
 
 }
 
@@ -465,7 +479,7 @@ p {
     }
 
     p {
-        font-size: 4.8vw;
+        font-size: 20px;
         width: 90%;
         margin: 0 auto;
     }
@@ -510,15 +524,21 @@ p {
     }
 
     .contacts p {
-        font-size: 3.5vw;
+        font-size: 15px;
+		width:100%;
+		margin-bottom:30px
     }
+	
+	.contacts {
+		flex-direction: column;
+	}
 
     .contacts-box h1 {
         font-size: 4vw;
     }
 	
 	.body {
-		padding-bottom: 100px;
+		padding-bottom: 80px;
 	}
 	
 	.top-footer {
