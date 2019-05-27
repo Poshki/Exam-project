@@ -160,7 +160,6 @@
 .body {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 .header {
@@ -210,7 +209,7 @@
 }
 
 .row-2 {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .sale-1 {
@@ -292,23 +291,23 @@
 
 .sale-1,
 .sale-3 {
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 .sale-2,
 .sale-4 {
-    margin-left: 2%;
+    margin-left: 1%;
 }
 
 .sale-2,
 .sale-3 {
-    width: 60%;
+    width: 65%;
 }
 
 .sale-1,
 .sale-4 {
     background-color: #ececec;
-    width: auto;
+    width:35%;
 }
 
 .sale-2 {
@@ -341,7 +340,84 @@
 }
 
 .sale-4 h1 {
-    padding: 3vw 40% 2vw 3vw;
+    padding: 3vw 20% 2vw 3vw;
+}
+
+.top-footer {
+	background-color: #1e2226;
+	display: flex;
+	justify-content: space-around;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	padding:30px 0;
+}
+
+.top-footer h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 800;
+	margin:0;
+	margin-bottom:10px;
+}
+
+.bottom-footer {
+	background-color: #91a580;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color:white;
+}
+
+.bottom-footer h3 {
+	margin:0;
+}
+
+.bottom-footer img {
+	width:2vw;
+	min-width:40px;
+}
+
+.insta, .facebook {
+	margin:10% 10%;
+	transition: all .2s ease-in-out;
+}
+
+.insta:hover, .facebook:hover {
+	transform: scale(1.05);
+}
+
+.hours ul {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+
+.email {
+	margin-top: 30px;
+}
+
+.some {
+	display: flex;
+}
+
+.wrapper {
+	min-height:100%;
+    position:relative;
+}
+
+.body {
+	padding-bottom: 350px;
+}
+
+.footer {
+	position:absolute;
+   	bottom:0;
+   	width:100%;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -477,4 +553,12 @@
         padding: 3vw 3vw 0 3vw;
         font-size: 5vw;
     }
+	
+	.body {
+		padding-bottom: 100px;
+	}
+	
+	.top-footer {
+		display: none;
+	}
 }
