@@ -135,7 +135,7 @@ p {
     color: white;
     padding: 0.5em 5% 0.5em 5%;
     font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .promo-text {
@@ -287,84 +287,86 @@ p {
 }
 
 .strong {
-	font-weight:800;
+    font-weight: 800;
 }
 
 .top-footer {
-	background-color: #1e2226;
-	display: flex;
-	justify-content: space-around;
-	color:white;
-	font-family: 'Raleway', sans-serif;
-	padding:30px 0;
+    background-color: #1e2226;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0;
 }
 
 .top-footer h2 {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 800;
-	margin:0;
-	margin-bottom:10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .bottom-footer {
-	background-color: #91a580;
-	font-family: 'Quicksand', sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	color:white;
+    background-color: #91a580;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
 }
 
 .bottom-footer h3 {
-	margin:0;
+    margin: 0;
 }
 
 .bottom-footer img {
-	width:2vw;
-	min-width:40px;
+    width: 2vw;
+    min-width: 40px;
 }
 
-.insta, .facebook {
-	margin:10% 10%;
-	transition: all .2s ease-in-out;
+.insta,
+.facebook {
+    margin: 10% 10%;
+    transition: all .2s ease-in-out;
 }
 
-.insta:hover, .facebook:hover {
-	transform: scale(1.05);
+.insta:hover,
+.facebook:hover {
+    transform: scale(1.05);
 }
 
 .hours ul {
-	list-style-type: none;
-	padding:0;
-	margin:0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .email {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .some {
-	display: flex;
+    display: flex;
 }
 
 .wrapper {
-	min-height:100%;
-    position:relative;
+    min-height: 100%;
+    position: relative;
 }
 
 .body {
-	padding-bottom: 350px;
+    padding-bottom: 350px;
 }
 
 .footer {
-	position:absolute;
-   	bottom:0;
-   	width:100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .contacters {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -373,13 +375,13 @@ p {
         font-size: 25px;
     }
 
-	p {
-		font-size: 1.3vw;
-	}
-	
-	.contacts p {
-		font-size: 1.3vw;
-	}
+    p {
+        font-size: 1.3vw;
+    }
+
+    .contacts p {
+        font-size: 1.3vw;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -388,10 +390,10 @@ p {
     .content {
         font-size: 1.5vw;
     }
-	
-	.description {
-		overflow-y: scroll;
-	}
+
+    .description {
+        overflow-y: scroll;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -456,10 +458,10 @@ p {
     .contacts-box h1 {
         font-size: 3.5vw;
     }
-	
-	.description {
-		overflow-y: scroll;
-	}
+
+    .description {
+        overflow-y: scroll;
+    }
 
 }
 
@@ -525,24 +527,24 @@ p {
 
     .contacts p {
         font-size: 15px;
-		width:100%;
-		margin-bottom:30px
+        width: 100%;
+        margin-bottom: 30px
     }
-	
-	.contacts {
-		flex-direction: column;
-	}
+
+    .contacts {
+        flex-direction: column;
+    }
 
     .contacts-box h1 {
         font-size: 4vw;
     }
-	
-	.body {
-		padding-bottom: 80px;
-	}
-	
-	.top-footer {
-		display: none;
-	}
+
+    .body {
+        padding-bottom: 80px;
+    }
+
+    .top-footer {
+        display: none;
+    }
 
 }
