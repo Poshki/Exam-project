@@ -109,7 +109,7 @@
 }
 
 .list li {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .list li:hover {
@@ -360,31 +360,14 @@
 }
 
 
-.products-1 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 30px;
-    flex-wrap: wrap;
-}
-
-.products-2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 30px;
-    flex-wrap: wrap;
-}
-
-.products-3 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 30px;
-    flex-wrap: wrap;
-}
-
-.products-4 {
+.products-1,
+.products-2,
+.products-3,
+.products-4,
+.products-5,
+.products-6,
+.products-7,
+.products-8 {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -394,24 +377,34 @@
 
 .filter-2,
 .filter-3,
-.filter-4 {
+.filter-4,
+.filter-5,
+.filter-6,
+.filter-7,
+.filter-8{
     display: none;
 }
 
 #link-1,
 #link-2,
 #link-3,
-#link-4 {
+#link-4,
+#link-5,
+#link-6,
+#link-7,
+#link-8 {
     cursor: pointer;
 }
 
 #link-1,
-#link-3 {
+#link-3,
+#link-5{
     margin-bottom: 15px;
 }
 
 #link-2,
-#link-4 {
+#link-4,
+#link-6 {
     margin-top: 15px;
 }
 
@@ -659,7 +652,11 @@
     .products-1,
     .products-2,
     .products-3,
-    .products-4 {
+    .products-4,
+	.products-5,
+    .products-6,
+    .products-7,
+    .products-8{
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;

@@ -57,6 +57,10 @@ $(document).ready(function () {
         $('.filter-2').css('display', 'none');
         $('.filter-3').css('display', 'none');
         $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
     })
 
     $('#link-2').click(function () {
@@ -64,6 +68,10 @@ $(document).ready(function () {
         $('.filter-2').css('display', 'block');
         $('.filter-3').css('display', 'none');
         $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
     })
 
     $('#link-3').click(function () {
@@ -71,6 +79,10 @@ $(document).ready(function () {
         $('.filter-2').css('display', 'none');
         $('.filter-3').css('display', 'block');
         $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
     })
 
     $('#link-4').click(function () {
@@ -78,5 +90,53 @@ $(document).ready(function () {
         $('.filter-2').css('display', 'none');
         $('.filter-3').css('display', 'none');
         $('.filter-4').css('display', 'block');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
+    })
+	
+	$('#link-5').click(function () {
+        $('.filter-1').css('display', 'none');
+        $('.filter-2').css('display', 'none');
+        $('.filter-3').css('display', 'none');
+        $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'block');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
+    })
+	
+	$('#link-6').click(function () {
+        $('.filter-1').css('display', 'none');
+        $('.filter-2').css('display', 'none');
+        $('.filter-3').css('display', 'none');
+        $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'block');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'none');
+    })
+	
+	$('#link-7').click(function () {
+        $('.filter-1').css('display', 'none');
+        $('.filter-2').css('display', 'none');
+        $('.filter-3').css('display', 'none');
+        $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'block');
+        $('.filter-8').css('display', 'none');
+    })
+	
+	$('#link-8').click(function () {
+        $('.filter-1').css('display', 'none');
+        $('.filter-2').css('display', 'none');
+        $('.filter-3').css('display', 'none');
+        $('.filter-4').css('display', 'none');
+		$('.filter-5').css('display', 'none');
+        $('.filter-6').css('display', 'none');
+		$('.filter-7').css('display', 'none');
+        $('.filter-8').css('display', 'block');
     })
 });

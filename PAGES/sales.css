@@ -109,7 +109,7 @@
 }
 
 .list li {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .list li:hover {
@@ -270,13 +270,9 @@
 }
 
 .button-1,
-.button-4 {
-    background-color: black;
-    color: white;
-}
-
 .button-2,
-.button-3 {
+.button-3,
+.button-4{
     background-color: white;
     color: black;
 }
